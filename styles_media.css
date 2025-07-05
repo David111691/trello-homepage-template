@@ -1,0 +1,22 @@
+@media (max-width: 1050px) {
+  .hero__left-block {
+    flex: 0 0 52%;
+    padding-left: 4rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .hero__form {
+    flex-direction: column;
+  }
+
+  .hero__button {
+    align-self: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero__container {
+    flex-direction: column;
+  }
+}

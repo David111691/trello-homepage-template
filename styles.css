@@ -1,0 +1,510 @@
+@font-face {
+  font-family: "Lucida Grande";
+  src: url("Lucida_Grande.woff2") format("woff2"),
+    url("Lucida_Grande.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+  color: #091e42;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+}
+
+.header__btn {
+  padding: 0.4rem 0.8rem;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  border-radius: 0.4rem;
+  border: 1px solid transparent;
+  background: none;
+  cursor: pointer;
+  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+
+.header__btn--login {
+  font-weight: 400;
+  color: #0065ff;
+}
+
+.header__btn--login:hover {
+  text-decoration: underline;
+}
+
+.header__btn--signup {
+  font-weight: 600;
+  color: #fff;
+  background-color: #0065ff;
+  transition: all 0.3s ease;
+}
+
+.header__btn--signup:hover {
+  background-color: #0051cc;
+}
+
+/* hero */
+.hero {
+  background: linear-gradient(0deg, #fff, #eae6ff 100%);
+  overflow-x: hidden;
+}
+
+.hero__container {
+  margin: 0 auto;
+  max-width: 114rem;
+  display: flex;
+  align-items: center;
+  padding-top: 11.2rem;
+  padding-bottom: 8rem;
+}
+
+.hero__left-block {
+  flex: 0 0 60%;
+  padding-left: 4rem;
+}
+
+.hero__title {
+  color: #091e42;
+  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+  font-size: 4.8rem;
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.hero__description {
+  margin-top: 0;
+  margin-bottom: 4.8rem;
+  font-size: 2rem;
+  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+  color: #091e42;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.hero__form {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.hero__input {
+  flex: 0 1 50%;
+  font-size: 1.8rem;
+  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+  padding: 0.6rem 1.2rem;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 0.8rem;
+}
+
+.hero__input:focus {
+  border-color: #80b2ff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 101, 255, 0.25);
+}
+
+.hero__button {
+  flex: 0 0 auto;
+  padding: 0.3rem 3rem;
+  font-size: 1.8rem;
+  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #0065ff;
+  border-color: transparent;
+  border-radius: 0.8rem;
+}
+
+.hero__img-block {
+  margin-left: 2rem;
+  margin-right: -8%;
+}
+
+.hero__img {
+  width: 100%;
+  height: auto;
+}
+
+/* product */
+.product {
+}
+
+.product__container {
+  margin: 0 auto;
+  max-width: 114rem;
+  text-align: center;
+  padding-top: 8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.product__title {
+  font-size: 3.6rem;
+  line-height: 1.33;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.4px;
+  color: #091e42;
+}
+
+.product__description {
+  color: #091e42;
+  width: 75%;
+  margin: 0 auto 2.2rem auto;
+}
+
+.product__link {
+  color: #0065ff;
+  background-color: transparent;
+  padding: 0.4rem 2rem;
+  border: 1px solid #0065ff;
+  border-radius: 0.8rem;
+  display: inline-block;
+  margin-bottom: 2.4rem;
+}
+
+.product__image {
+  width: 100%;
+  height: auto;
+}
+
+.product__logos {
+}
+
+.product__logos-description {
+  margin-bottom: 2.4rem;
+}
+
+.product__logos-container {
+  display: flex;
+  gap: 3.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__logo {
+}
+
+.product__logo-svg {
+}
+
+/* features */
+.features__container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.features__block {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 4rem;
+}
+
+.features__block--reversed {
+  flex-direction: row-reverse;
+}
+
+.feature__block-text {
+  flex: 0 1 60%;
+}
+
+.feature__block-image {
+  flex: 0 1 35%;
+}
+
+.features__subtitle {
+  text-transform: uppercase;
+  line-height: 1.25;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.features__title {
+  color: inherit;
+  font-size: 3.6rem;
+  line-height: 1.33;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.features__description {
+  margin-bottom: 2.4rem;
+}
+
+.features__description--grey {
+  color: #7a869a;
+}
+
+.feature_btn-learn {
+  color: inherit;
+  font-size: 2.4rem;
+  line-height: 1.33;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.feature_btn-learn:hover {
+  text-decoration-line: underline;
+}
+
+.feature__block-img {
+  width: 100%;
+  height: auto;
+}
+
+/* plans */
+.plans {
+  padding-left: 3.6rem;
+  padding-right: 3.6rem;
+}
+
+.plans__container {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 3.2rem;
+  border-color: #091e42;
+  border-top: 0.15rem solid;
+  border-bottom: 0.15rem solid;
+  padding: 2.4rem 4rem;
+}
+
+.plans__block {
+  display: flex;
+  gap: 2.8rem;
+}
+
+.plans__title {
+  font-size: 2.4rem;
+  line-height: 1.33;
+  margin-bottom: 0.8rem;
+}
+
+.plans__description {
+  margin-bottom: 2.4rem;
+}
+
+.plans__link {
+  padding: 0.4rem 1.6rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  border-radius: 0.32rem;
+  border: 1px solid #0065ff;
+  color: #0065ff;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.plans__link:hover {
+  color: #fff;
+  background-color: #0065ff;
+}
+
+/* customer stories  */
+.customer-stories {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.customer-stories__container {
+  margin: 0 auto;
+  max-width: 114rem;
+  margin-top: 8rem;
+}
+
+.customer-stories__container-flex {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.customer-stories__logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-stories__logo-image {
+}
+
+.customer-stories__quote-image {
+}
+
+.customer-stories__label-1 {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.customer-stories__label-2 {
+  font-size: 2.4rem;
+  line-height: 1.33;
+  font-weight: 600;
+}
+
+.customer-stories__quote-container {
+  font-size: 3.2rem;
+  position: relative;
+  padding: 2.4rem 0 0 4.8rem;
+}
+
+.customer-stories__quote-image {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.customer-stories__quote {
+  margin: 0;
+}
+
+.customer-stories__footer {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  margin-left: auto;
+}
+
+.customer-stories__footer p {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.customer-stories__footer-label {
+  display: block;
+  width: max-content;
+  margin-left: auto;
+}
+
+.customer-stories__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  padding-top: 1.6rem;
+  margin: 0;
+  margin-top: 3.2rem;
+  align-items: center;
+  gap: 2.2rem;
+  border-top: 5px solid #172b4d;
+}
+
+.customer-stories__list-item-arrow {
+  background-color: #172b4d;
+  padding: 0.8rem 0.8rem;
+  color: #fff;
+  border-radius: 0.4rem;
+}
+
+.customer-stories__list-item {
+  color: #a5adba;
+}
+
+.customer-stories__list-item--active {
+  color: #172b4d;
+}
+
+.customer-stories__list li {
+  display: flex;
+  align-items: center;
+}
+
+/* sign up  */
+.sign-up {
+  padding: 4.8rem 3.6rem;
+}
+
+.sign-up__container {
+  background-image: url(background.svg),
+    linear-gradient(0deg, #4c9aff, #403294 100%);
+  margin: 0 auto;
+  max-width: 114rem;
+  padding: 4.8rem 8.6rem;
+  box-sizing: border-box;
+  border-radius: 0.8rem;
+}
+
+.sign-up__title {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 1.33;
+  margin-bottom: 4.8rem;
+}
+
+.sign-up__form {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.sign-up__input {
+  font-size: 1.6rem;
+  line-height: 1.33;
+  padding: 0.6rem 1.8rem;
+  border-radius: 0.6rem;
+  color: #495057;
+  border: none;
+}
+
+.sign-up__btn {
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #00b8d9;
+  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+  padding: 0.6rem 1.8rem;
+  border-radius: 0.6rem;
+  border: none;
+  transition: 0.3s ease all;
+  cursor: pointer;
+  font-weight: 600;
+}
+.sign-up__input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 184, 217, 0.5);
+  outline: none;
+}
+
+.sign-up__btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 184, 217, 0.5);
+}
+
+.sign-up__btn:hover {
+  background-color: #0098b3;
+}
